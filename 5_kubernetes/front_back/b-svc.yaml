@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-back
+  labels:
+    run: my-back
+spec:
+  type: NodePort     # 서비스 타입
+  ports:
+  - nodePort: 30001  # 외부 포트
+    port: 8080       # 서비스 포트
+    targetPort: 30001   # 컨테이너 포트(pod 포트)
+    protocol: TCP
+    name: http
+  selector:
+    app: back
+

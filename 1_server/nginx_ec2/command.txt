@@ -1,0 +1,11 @@
+ssh -i .\Downloads\test.pem -f -N -L 6777:localhost:55555 ubuntu@3.112.204.166
+
+ssh hancom@localhost -p 6777
+
+ssh -i test.pem -f -N -R ?:localhost:? ubuntu@3.112.204.166
+
+ss -ltp
+
+sudo service nginx restart
+
+sudo service nginx status

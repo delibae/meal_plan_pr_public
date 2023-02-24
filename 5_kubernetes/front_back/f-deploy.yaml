@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-deployment
+  labels:
+    app: front
+spec:
+  replicas: 3                 # 3개의 pod
+  selector:
+    matchLabels:
+      app: front
+  template:
+    metadata:
+      labels:
+        app: front
+    spec:
+      containers:
+      - name: front
+        image: baehanjin/m_front:7
+        ports:
+        - containerPort: 3000   # 컨테이너 포트(pod 포트)
+      nodeSelector:
+        key: worker1

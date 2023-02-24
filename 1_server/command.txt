@@ -1,0 +1,16 @@
+docker run -d -p 0.0.0.0:3000:3000/tcp --name m_front baehanjin/m_front 
+
+docker run -d -p 0.0.0.0:3001:3001/tcp --name m_back baehanjin/m_back
+
+
+docker build -t baehanjin/m_front:1 .
+docker build -t baehanjin/m_back:1 .
+
+
+minikube start --extra-config=apiserver.service-node-port-range=5000-5021
+
+
+kubectl apply -f minikube.yaml
+
+kubectl expose deployment diabetes --port=8080 --target-port=5000 \
+        --name=example-service --type=LoadBalancer

@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: model3-deployment
+  labels:
+    app: model3
+spec:
+  replicas: 1             # 3개의 pod
+  selector:
+    matchLabels:
+      app: model3
+  template:
+    metadata:
+      labels:
+        app: model3
+    spec:
+      containers:
+      - name: model3
+        image: jupyter/tensorflow-notebook:python-3.8.13
+        ports:
+        - containerPort: 8888   # 컨테이너 포트(pod 포트)
+        env:
+        - name: JUPYTER_TOKEN
+          value: "easy"
+        - name: GRANT_SUDO
+          value: "yes"
+        securityContext:
+          allowPrivilegeEscalation: false
+          runAsUser: 0
+      nodeSelector:
+        key: worker3

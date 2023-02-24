@@ -1,0 +1,2 @@
+kubectl label nodes ubuntu2 role=work
+kubectl label nodes ubuntu role=master

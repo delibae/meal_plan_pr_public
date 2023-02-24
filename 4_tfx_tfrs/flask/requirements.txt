@@ -1,0 +1,7 @@
+Flask==2.2.2
+flask-cors
+
+requests>=2.23.0
+
+tensorflow
+numpy

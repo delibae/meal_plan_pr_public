@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-model2
+  labels:
+    run: my-model2
+spec:
+  type: NodePort     # 서비스 타입
+  ports:
+  - nodePort: 30004  # 외부 포트
+    port: 8080       # 서비스 포트
+    targetPort: 30004  # 컨테이너 포트(pod 포트)
+    protocol: TCP
+    name: http
+  selector:
+    app: model2
+

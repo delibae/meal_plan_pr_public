@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: model2-deployment
+  labels:
+    app: model2
+spec:
+  replicas: 1             # 3개의 pod
+  selector:
+    matchLabels:
+      app: model2
+  template:
+    metadata:
+      labels:
+        app: model2
+    spec:
+      containers:
+      - name: model2
+        image: baehanjin/new_model:7
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 30004   # 컨테이너 포트(pod 포트)
+      nodeSelector:
+        key: worker3

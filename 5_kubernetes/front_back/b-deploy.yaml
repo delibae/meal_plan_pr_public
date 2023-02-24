@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: back-deployment
+  labels:
+    app: back
+spec:
+  replicas: 3                 # 3개의 pod
+  selector:
+    matchLabels:
+      app: back
+  template:
+    metadata:
+      labels:
+        app: back
+    spec:
+      containers:
+      - name: back
+        image: baehanjin/m_back:7
+        ports:
+        - containerPort: 3001   # 컨테이너 포트(pod 포트)
+      nodeSelector:
+        key: worker1

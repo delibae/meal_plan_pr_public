@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: model-deployment
+  labels:
+    app: model
+spec:
+  replicas: 1             # 3개의 pod
+  selector:
+    matchLabels:
+      app: model
+  template:
+    metadata:
+      labels:
+        app: model
+    spec:
+      containers:
+      - name: model
+        image: baehanjin/m_model:3
+        ports:
+        - containerPort: 30003   # 컨테이너 포트(pod 포트)
+      nodeSelector:
+        key: worker2
