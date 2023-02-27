@@ -49,3 +49,77 @@
 
 ![stsatic](./img/tfx_schedule.PNG)  
 ![stsatic](./img/scheduler.PNG) 
+
+## TFRS test
+
+![stsatic](./img/tfrs_test.PNG) 
+
+# Detection 모델(with Yolov5)
+## Yolo structure
+
+![stsatic](./img/yolo_structure.PNG) 
+
+## EDA  
+
+![stsatic](./img/yolo_eda.PNG) 
+
+## Object Detection  
+
+![stsatic](./img/object_detection.PNG) 
+
+# Monitoring  
+
+## 모니터링 구조  
+
+![stsatic](./img/monitoring_structure.PNG) 
+
+## Prometheus  
+
+![stsatic](./img/Prometheus.PNG) 
+
+## Prometheus Alert Manger
+
+![stsatic](./img/alertmanager.PNG) 
+
+## Grafana - Kubernetes
+
+![stsatic](./img/grafana_kube.PNG) 
+
+## Grafana - AWS Cloud Watch
+
+![stsatic](./img/grafana_aws.PNG) 
+
+# Service
+
+## Front
+
+### Service Interface
+
+![stsatic](./img/interface.PNG) 
+
+### Front Preview
+
+![stsatic](./img/preview1.PNG) 
+![stsatic](./img/preview2.PNG) 
+![stsatic](./img/preview3.PNG) 
+![stsatic](./img/preview4.PNG) 
+![stsatic](./img/preview5.PNG) 
+![stsatic](./img/preview6.PNG) 
+![stsatic](./img/preview7.PNG) 
+![stsatic](./img/preview8.PNG) 
+![stsatic](./img/preview9.PNG) 
+
+## DB + Backend + Network
+
+### DB ERD
+
+![stsatic](./img/ERD.PNG) 
+
+### BackEnd
+
+![stsatic](./img/backend.PNG) 
+
+### Network 구조도
+
+![stsatic](./img/network_structure.PNG) 
+
