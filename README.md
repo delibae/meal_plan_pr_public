@@ -37,19 +37,19 @@
 
 # Dockers  
 
-https://hub.docker.com/r/docker/baehanjin/new_model
+https://hub.docker.com/r/baehanjin/new_model
 
 추천 모델
 
-https://hub.docker.com/r/docker/baehanjin/m_model
+https://hub.docker.com/r/baehanjin/m_model
 
 yolo detection 모델
 
-https://hub.docker.com/r/docker/baehanjin/m_front
+https://hub.docker.com/r/baehanjin/m_front
 
 프론트(vue)
 
-https://hub.docker.com/r/docker/baehanjin/m_back
+https://hub.docker.com/r/baehanjin/m_back
 
 백엔드(express)
 
