@@ -67,6 +67,28 @@
 
 ![stsatic](./img/object_detection.PNG) 
 
+# Dockers  
+
+https://hub.docker.com/repository/docker/baehanjin/new_model/general
+
+추천 모델
+
+https://hub.docker.com/repository/docker/baehanjin/m_model/general
+
+yolo detection 모델
+
+https://hub.docker.com/repository/docker/baehanjin/m_front/general  
+
+프론트(vue)
+
+https://hub.docker.com/repository/docker/baehanjin/m_back/general
+
+백엔드(express)
+
+https://hub.docker.com/layers/jupyter/tensorflow-notebook/python-3.8.13/images/sha256-c077d121c38b1435ed7a9652180eae21e6d92ad842cc2a53e7162d3719604cfb?context=explore  
+
+tfx pipeline + 스케줄러
+
 # Monitoring  
 
 ## 모니터링 구조  
